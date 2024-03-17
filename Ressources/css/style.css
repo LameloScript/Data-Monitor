@@ -1,0 +1,541 @@
+/* Déclarations des fonts */
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+/* Déclarations des couleurs */
+:root {
+  --color-white: #ffffff;
+  --color-grey: #6f6f6f;
+  --color-dark-grey: #333333;
+  --color-green: #007679;
+}
+
+
+
+@font-face {
+  font-family: 'Joyride1';
+  src: url('Joyride-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Joyride2';
+  src: url('Joyride-Italic.otf') format('opentype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Joyride3';
+  src: url('Joyride-Round.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Joyride4';
+  src: url('Joyride-RoundItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Joyride5';
+  src: url('Joyride-Extended.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Joyride6';
+  src: url('Joyride-ExtendedItalic.otf') format('opentype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Joyride7';
+  src: url('Joyride-ExtendedRound.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Joyride8';
+  src: url('Joyride-ExtendedRoundItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+.bck {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Pour centrer le contenu verticalement */
+  /* align-items: center; */ /* Pour centrer le contenu horizontalement */
+  background-image: url('../assets/bck.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #F3F3F3;
+  background-repeat: no-repeat;
+  max-width: 1118px;
+  margin: 0 auto; /* Pour centrer la classe bck elle-même sur la page */
+}
+
+
+.sec-h .joy, .sec-h .joyy {
+  font-family: Joyride;
+  font-size: 101px;
+  color: black;
+  /* padding-right: 154px; */
+}
+
+.sec-h .joy1, .sec-h .joy2{
+  font-family: Joyride;
+  font-size: 85px;
+  color: black;
+}
+.sec-h{
+  display: flex;
+  /* justify-content: center; */
+  padding-top: 50px;
+  /* width: 353px; */
+}
+
+.sec-d {
+  display: flex;
+}
+
+.sec-d .dr img {
+  margin-top: -73px;
+  width: 560px;
+  margin-right: -28px;
+  display: flex;
+  align-items: center;
+}
+
+
+.btd {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 278px 0px 0px;
+  margin-right: -11px;
+  /* line-height: 14px; */
+}
+
+.sec-d .ga p{
+  font-family: var(--font-poppins);
+  font-size: 17px;
+  color: #595959a3;
+  line-height: 23px;
+  font-weight: 300;
+}
+
+.sec-d .ga h1{
+  font-family: Joyride;
+  font-size: 33px;
+  color: #000000;
+  line-height: 37px;
+  /* font-weight: 300; */
+}
+
+body {
+  /* max-width: 100%; */
+  margin: 0 auto;
+  font-family: var(--font-poppins);
+  color: var(--color-grey);
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec-h .arrow{
+  position: relative;
+  left: 840px;
+  /* top: 162px; */
+}
+
+.sec-d1 {
+  /* width: 100vw; */ /* Utilisez 100vw pour spécifier 100% de la largeur de la vue */
+  background-color: var(--color-green); /* Couleur de fond de votre choix */
+  padding: 0px 5px; /* Ajoutez un remplissage pour l'espace intérieur si nécessaire */
+  margin: 0; /* Assurez-vous qu'il n'y a pas de marge pour que la section soit alignée sur le bord de l'écran */
+  box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur spécifiée */
+  display: flex;
+  /* justify-content: center; */
+}
+
+.sec-d2 {
+  /* width: 1118px; */ /* Utilisez 100vw pour spécifier 100% de la largeur de la vue */
+  background-color: var(--color-white); /* Couleur de fond de votre choix */
+  padding: 0px 5px; /* Ajoutez un remplissage pour l'espace intérieur si nécessaire */
+  margin: 0; /* Assurez-vous qu'il n'y a pas de marge pour que la section soit alignée sur le bord de l'écran */
+  box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur spécifiée */
+  display: flex;
+  justify-content: center;
+}
+
+
+.sec-d2 h5{
+  font-family: Joyride;
+  color: #000000;
+  font-size: 27px;
+  text-align: center;
+}
+
+.sec-d3 {
+  /* width: 1118px; */ /* Utilisez 100vw pour spécifier 100% de la largeur de la vue */
+  /* background-color: var(--color-grey); */ /* Couleur de fond de votre choix */
+  padding: 0px 5px; /* Ajoutez un remplissage pour l'espace intérieur si nécessaire */
+  margin: 0; /* Assurez-vous qu'il n'y a pas de marge pour que la section soit alignée sur le bord de l'écran */
+  box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur spécifiée */
+  display: flex;
+  justify-content: center;
+}
+
+.sec-dd2{
+  display: flex;
+  justify-content: center;
+  width: 1118px;
+}
+
+.boxi, .boxii{
+  display: flex;
+}
+
+.ga4 {
+  display: flex;
+  width: 84%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  padding-top: 52px;
+}
+
+.ttl{
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.ttl h4{font-family: Joyride;font-size: 18px;color: aliceblue;}
+
+.ttl span{
+  font-size: 42px;
+  font-family: Joyride;
+  color: aliceblue;
+}
+
+.box1 {
+  width: 257px;
+  padding: 20px;
+  margin: 10px;
+  background-color: var(--color-green);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 206px;
+}
+
+.box1.highlighted {
+  background-color: #032d5a;
+}
+
+.box1 p{
+  font-family: var(--font-poppins);
+  font-size: 9px;
+  color: #F3F3F3;
+  border-radius: 50px;
+  /* padding-top: -61px; */
+}
+
+.ga2 img {
+  width: 96%;
+  padding-top: 20px;
+}
+
+.ga5 img {
+  width: 132%;
+  padding-top: 71px;
+  /* padding-left: -179px; */
+}
+
+
+.ga1 p {
+  color: #F3F3F3;
+  font-size: 24px;
+  font-family: Joyride;
+}
+
+.slider {
+  width: 100%;
+  height: 335px;
+  overflow: hidden;
+  position: relative;
+  /* background-color: black; */
+  /* padding-top: 33px; */
+}
+
+.slide {
+  position: absolute;
+  top: -41px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.box {
+  width: 591px;
+  height: 277px;
+  background-color: #035658;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 20px;
+  /* padding-bottom: -50px; */
+  box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 31%);
+  padding: 2px 0px;
+}
+
+.box h4{
+  font-family: Joyride;
+  color: #F3F3F3;
+  font-size: 14px;
+}
+
+.box p{
+  font-family: var(--font-poppins);
+  font-size: 14px;
+  color: #F3F3F3;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.ga3 h2{
+  font-family: Joyride;
+  color: #000000;
+  padding-top: 20px;
+  font-size: 21px;
+  text-align: center;
+}
+
+
+
+.ga3 {
+  width: 70%;
+}
+
+.dots {
+  text-align: center;
+  margin-top: -26px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #007779af;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: var(--color-green);
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* background-color: var(--color-dark-grey); */
+  color: var(--color-white);
+  /* max-width: 129%; */
+  /* margin: 0 auto; */
+}
+
+.logo a {
+  display: block;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-poppins);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  color: var(--color-grey);
+  text-decoration: none;
+}
+
+.connexion a {
+  color: var(--color-grey);
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--color-white);
+  border-radius: 1000px;
+  border: 1px solid;
+  font-family: var(--font-poppins);
+  font-weight: 300;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.connexion a i {
+  padding-right: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.btd .cmd {
+  background-color: teal;
+  color: white;
+  font-family: var(--font-poppins);
+  padding: 13px 20px;
+  border: none;
+  border-radius: 663px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 24px;
+}
+
+.btd .en {
+  background-color: rgb(224, 224, 224);
+  color: rgb(3, 3, 3);
+  font-family: var(--font-poppins);
+  padding: 13px 20px;
+  border: none;
+  border-radius: 663px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 9px;
+}
+
+/* Styles pour le mode tablette et mobile */
+@media (max-width: 930px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-green);
+    padding: 17px;
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .sec-d {
+  display: flex;
+  }
+
+  .sec-h .joy, .sec-h .joyy {
+    font-family: Joyride;
+    font-size: 38px;
+    color: black;
+    
+  }
+
+  .sec-h .arrow{
+    display: none;
+  }
+
+  
+  .sec-h .joy1, .sec-h .joy2{
+    font-family: Joyride;
+    font-size: 38px;
+    color: black;
+  }
+  .sec-h{
+    display: flex;
+    justify-content: center;
+    padding-top: 56px;
+  }
+  
+  .sec-d h1 {
+    font-family: Joyride;
+    font-size: 38px;
+    color: black;
+  }
+  
+  
+
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 10px;
+  }
+
+  .connexion {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--color-green);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
