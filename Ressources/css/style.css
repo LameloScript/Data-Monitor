@@ -1,6 +1,6 @@
 /* Déclarations des fonts */
 :root {
-  --font-poppins: 'Poppins', sans-serif;
+  --font-poppins: "Poppins", sans-serif;
 }
 
 /* Déclarations des couleurs */
@@ -11,86 +11,83 @@
   --color-green: #007679;
 }
 
-
-
 @font-face {
-  font-family: 'Joyride1';
-  src: url('Joyride-Regular.otf') format('opentype');
+  font-family: "Joyride1";
+  src: url("Joyride-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Joyride2';
-  src: url('Joyride-Italic.otf') format('opentype');
+  font-family: "Joyride2";
+  src: url("Joyride-Italic.otf") format("opentype");
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Joyride3';
-  src: url('Joyride-Round.otf') format('opentype');
+  font-family: "Joyride3";
+  src: url("Joyride-Round.otf") format("opentype");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Joyride4';
-  src: url('Joyride-RoundItalic.otf') format('opentype');
+  font-family: "Joyride4";
+  src: url("Joyride-RoundItalic.otf") format("opentype");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Joyride5';
-  src: url('Joyride-Extended.otf') format('opentype');
+  font-family: "Joyride5";
+  src: url("Joyride-Extended.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Joyride6';
-  src: url('Joyride-ExtendedItalic.otf') format('opentype');
+  font-family: "Joyride6";
+  src: url("Joyride-ExtendedItalic.otf") format("opentype");
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Joyride7';
-  src: url('Joyride-ExtendedRound.otf') format('opentype');
+  font-family: "Joyride7";
+  src: url("Joyride-ExtendedRound.otf") format("opentype");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Joyride8';
-  src: url('Joyride-ExtendedRoundItalic.otf') format('opentype');
+  font-family: "Joyride8";
+  src: url("Joyride-ExtendedRoundItalic.otf") format("opentype");
   font-weight: bold;
   font-style: italic;
 }
-
-
 
 .bck {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Pour centrer le contenu verticalement */
   /* align-items: center; */ /* Pour centrer le contenu horizontalement */
-  background-image: url('../assets/bck.png');
+  background-image: url("../assets/bck.png");
   background-size: cover;
   background-position: center;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   background-repeat: no-repeat;
   max-width: 1118px;
   margin: 0 auto; /* Pour centrer la classe bck elle-même sur la page */
 }
 
-
-.sec-h .joy, .sec-h .joyy {
+.sec-h .joy,
+.sec-h .joyy {
   font-family: Joyride;
   font-size: 101px;
   color: black;
   /* padding-right: 154px; */
 }
 
-.sec-h .joy1, .sec-h .joy2{
+.sec-h .joy1,
+.sec-h .joy2 {
   font-family: Joyride;
   font-size: 85px;
   color: black;
 }
-.sec-h{
+.sec-h {
   display: flex;
   /* justify-content: center; */
   padding-top: 50px;
@@ -109,7 +106,6 @@
   align-items: center;
 }
 
-
 .btd {
   display: flex;
   flex-direction: column;
@@ -118,7 +114,7 @@
   /* line-height: 14px; */
 }
 
-.sec-d .ga p{
+.sec-d .ga p {
   font-family: var(--font-poppins);
   font-size: 17px;
   color: #595959a3;
@@ -126,7 +122,7 @@
   font-weight: 300;
 }
 
-.sec-d .ga h1{
+.sec-d .ga h1 {
   font-family: Joyride;
   font-size: 33px;
   color: #000000;
@@ -139,19 +135,18 @@ body {
   margin: 0 auto;
   font-family: var(--font-poppins);
   color: var(--color-grey);
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
 }
 
-.sec-h .arrow{
+.sec-h .arrow {
   position: relative;
   left: 840px;
   /* top: 162px; */
 }
 
 .sec-d1 {
-  /* width: 100vw; */ /* Utilisez 100vw pour spécifier 100% de la largeur de la vue */
   background-color: var(--color-green); /* Couleur de fond de votre choix */
   padding: 0px 5px; /* Ajoutez un remplissage pour l'espace intérieur si nécessaire */
   margin: 0; /* Assurez-vous qu'il n'y a pas de marge pour que la section soit alignée sur le bord de l'écran */
@@ -161,7 +156,6 @@ body {
 }
 
 .sec-d2 {
-  /* width: 1118px; */ /* Utilisez 100vw pour spécifier 100% de la largeur de la vue */
   background-color: var(--color-white); /* Couleur de fond de votre choix */
   padding: 0px 5px; /* Ajoutez un remplissage pour l'espace intérieur si nécessaire */
   margin: 0; /* Assurez-vous qu'il n'y a pas de marge pour que la section soit alignée sur le bord de l'écran */
@@ -170,31 +164,79 @@ body {
   justify-content: center;
 }
 
-
-.sec-d2 h5{
+.sec-ddd2 h5 {
   font-family: Joyride;
   color: #000000;
   font-size: 27px;
   text-align: center;
 }
 
+.contai {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* border-bottom: 4px solid #000; */
+}
+
+.email-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #0056b3;
+}
+
+.sec-ddd2 p {
+  font-family: var(--font-poppins);
+  color: #a3a3a3;
+  font-size: 21px;
+
+  text-align: center;
+}
+
+.sec-ddd2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  /* border-bottom: 2px solid #000; */
+  /* width: 1118px; */
+  /* justify-content: center; */
+  padding-bottom: 28px;
+  /* margin: 0px -219px; */
+  /* border-bottom-width: 3px; */ /* Définit la largeur du bord inférieur à 2 pixels */
+}
+
 .sec-d3 {
-  /* width: 1118px; */ /* Utilisez 100vw pour spécifier 100% de la largeur de la vue */
-  /* background-color: var(--color-grey); */ /* Couleur de fond de votre choix */
-  padding: 0px 5px; /* Ajoutez un remplissage pour l'espace intérieur si nécessaire */
+  padding: 44px 5px; /* Ajoutez un remplissage pour l'espace intérieur si nécessaire */
   margin: 0; /* Assurez-vous qu'il n'y a pas de marge pour que la section soit alignée sur le bord de l'écran */
   box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur spécifiée */
   display: flex;
   justify-content: center;
 }
 
-.sec-dd2{
+.sec-dd2 {
   display: flex;
   justify-content: center;
   width: 1118px;
 }
 
-.boxi, .boxii{
+.boxi,
+.boxii {
   display: flex;
 }
 
@@ -210,16 +252,18 @@ body {
   padding-top: 52px;
 }
 
-.ttl{
-
+.ttl {
   display: flex;
   justify-content: space-between;
-
 }
 
-.ttl h4{font-family: Joyride;font-size: 18px;color: aliceblue;}
+.ttl h4 {
+  font-family: Joyride;
+  font-size: 18px;
+  color: aliceblue;
+}
 
-.ttl span{
+.ttl span {
   font-size: 42px;
   font-family: Joyride;
   color: aliceblue;
@@ -233,17 +277,17 @@ body {
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  height: 206px;
+  height: 255px;
 }
 
 .box1.highlighted {
   background-color: #032d5a;
 }
 
-.box1 p{
+.box1 p {
   font-family: var(--font-poppins);
-  font-size: 9px;
-  color: #F3F3F3;
+  font-size: 11px;
+  color: #f3f3f3;
   border-radius: 50px;
   /* padding-top: -61px; */
 }
@@ -259,9 +303,8 @@ body {
   /* padding-left: -179px; */
 }
 
-
 .ga1 p {
-  color: #F3F3F3;
+  color: #f3f3f3;
   font-size: 24px;
   font-family: Joyride;
 }
@@ -305,29 +348,27 @@ body {
   padding: 2px 0px;
 }
 
-.box h4{
+.box h4 {
   font-family: Joyride;
-  color: #F3F3F3;
+  color: #f3f3f3;
   font-size: 14px;
 }
 
-.box p{
+.box p {
   font-family: var(--font-poppins);
   font-size: 14px;
-  color: #F3F3F3;
+  color: #f3f3f3;
   text-align: center;
   padding: 0px 10px;
 }
 
-.ga3 h2{
+.ga3 h2 {
   font-family: Joyride;
   color: #000000;
   padding-top: 20px;
   font-size: 21px;
   text-align: center;
 }
-
-
 
 .ga3 {
   width: 70%;
@@ -351,7 +392,6 @@ body {
 .dot.active {
   background-color: var(--color-green);
 }
-
 
 header {
   display: flex;
@@ -457,39 +497,37 @@ header {
   }
 
   .sec-d {
-  display: flex;
+    display: flex;
   }
 
-  .sec-h .joy, .sec-h .joyy {
+  .sec-h .joy,
+  .sec-h .joyy {
     font-family: Joyride;
     font-size: 38px;
     color: black;
-    
   }
 
-  .sec-h .arrow{
+  .sec-h .arrow {
     display: none;
   }
 
-  
-  .sec-h .joy1, .sec-h .joy2{
+  .sec-h .joy1,
+  .sec-h .joy2 {
     font-family: Joyride;
     font-size: 38px;
     color: black;
   }
-  .sec-h{
+  .sec-h {
     display: flex;
     justify-content: center;
     padding-top: 56px;
   }
-  
+
   .sec-d h1 {
     font-family: Joyride;
     font-size: 38px;
     color: black;
   }
-  
-  
 
   .menu li {
     margin-right: 0;
