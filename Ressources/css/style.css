@@ -124,10 +124,11 @@
 
 .sec-d .ga h1 {
   font-family: Joyride;
-  font-size: 33px;
+  font-size: 24px;
   color: #000000;
   line-height: 37px;
   /* font-weight: 300; */
+  /* text-align: center; */
 }
 
 body {
@@ -146,13 +147,32 @@ body {
   /* top: 162px; */
 }
 
-.sec-d1 {
-  background-color: var(--color-green); /* Couleur de fond de votre choix */
-  padding: 0px 5px; /* Ajoutez un remplissage pour l'espace intérieur si nécessaire */
-  margin: 0; /* Assurez-vous qu'il n'y a pas de marge pour que la section soit alignée sur le bord de l'écran */
-  box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur spécifiée */
+.marquee {
+  background-color: teal;
+  color: white;
+  padding: 16px;
   display: flex;
-  /* justify-content: center; */
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 10s linear infinite;
+  padding-right: 19px;
+  font-size: 29px;
+  font-family: Joyride;
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
 }
 
 .sec-d2 {
@@ -175,25 +195,39 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   /* border-bottom: 4px solid #000; */
+  padding-top: 20px;
 }
 
-.email-input {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.input-container {
+  padding: 16px 63px 16px 23px;
+  font-size: 13px;
+  border: none;
+  border-radius: 190px;
+  /* margin: 20px; */
+  background-color: #EDEDED;
+  font-family: 'Poppins';
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.email-input{
+  border: none;
+  background-color: #EDEDED;
+
 }
 
 .start-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
+  padding: 16px 63px;
+  font-size: 13px;
+  background-color: #007679;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 190px;
   cursor: pointer;
+  font-family: 'Poppins';
 }
 
 .start-button:hover {
@@ -203,7 +237,7 @@ body {
 .sec-ddd2 p {
   font-family: var(--font-poppins);
   color: #a3a3a3;
-  font-size: 21px;
+  font-size: 18px;
 
   text-align: center;
 }
@@ -335,7 +369,7 @@ body {
 .box {
   width: 591px;
   height: 277px;
-  background-color: #035658;
+  background-color: teal;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -480,8 +514,28 @@ header {
   margin-top: 9px;
 }
 
+.foot {
+  font-family: Joyride;
+  font-size: 11px;
+  color: #686868;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-top: 3px solid #D9D9D9;
+  padding: 19px 356px;
+  margin-top: 20px;
+}
+
+
+  footer{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
 /* Styles pour le mode tablette et mobile */
-@media (max-width: 930px) {
+/* @media (max-width: 930px) {
   .menu {
     display: none;
     flex-direction: column;
@@ -496,38 +550,6 @@ header {
     font-size: 18px;
   }
 
-  .sec-d {
-    display: flex;
-  }
-
-  .sec-h .joy,
-  .sec-h .joyy {
-    font-family: Joyride;
-    font-size: 38px;
-    color: black;
-  }
-
-  .sec-h .arrow {
-    display: none;
-  }
-
-  .sec-h .joy1,
-  .sec-h .joy2 {
-    font-family: Joyride;
-    font-size: 38px;
-    color: black;
-  }
-  .sec-h {
-    display: flex;
-    justify-content: center;
-    padding-top: 56px;
-  }
-
-  .sec-d h1 {
-    font-family: Joyride;
-    font-size: 38px;
-    color: black;
-  }
 
   .menu li {
     margin-right: 0;
@@ -574,6 +596,332 @@ header {
   }
 
   .menu.active {
+    display: flex; */
+  
+/* 
+  .sec-d {
     display: flex;
   }
-}
+
+  .sec-h .joy,
+  .sec-h .joyy {
+    font-family: Joyride;
+    font-size: 38px;
+    color: black;
+  }
+
+  .sec-h .arrow {
+    display: none;
+  }
+
+  .sec-h .joy1,
+  .sec-h .joy2 {
+    font-family: Joyride;
+    font-size: 38px;
+    color: black;
+  }
+  .sec-h {
+    display: flex;
+    justify-content: center;
+    padding-top: 56px;
+  }
+
+  .sec-d h1 {
+    font-family: Joyride;
+    font-size: 38px;
+    color: black;
+  } */
+
+
+  @media (max-width: 930px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: var(--color-green);
+      padding: 1rem;
+      font-family: var(--font-poppins);
+      font-weight: 300;
+      font-size: 18px;
+    }
+  
+    .menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .menu a {
+      color: var(--color-white);
+      text-decoration: none;
+      font-family: var(--font-poppins);
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 10px;
+    }
+  
+    .connexion {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      background-color: var(--color-green);
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .menu-toggle.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  }
+  
+  /* Styles pour les smartphones */
+  @media (max-width: 600px) {
+    .bck {
+      padding: 20px;
+    }
+
+    .sec-h{
+      display: flex;
+      justify-content: center;
+    }
+
+    .sec-h .joy {
+      font-size: 25px;
+    }
+
+    .sec-d .ga h1 {
+      font-family: Joyride;
+      font-size: 20px;
+      color: #000000;
+      line-height: 24px;
+    }
+
+    .sec-d .ga p {
+      font-family: var(--font-poppins);
+      font-size: 14px;
+      color: #595959a3;
+      line-height: 19px;
+      font-weight: 300;
+  }
+
+  .marquee-content {
+    font-size: 14px;
+    font-family: Joyride;
+  }
+
+  .sec-dd2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ga2 img {
+    width: 58%;
+  }
+  
+  .ga3 h2 {
+    font-family: Joyride;
+    font-size: 17px;
+  }
+
+  .box h4 {
+  font-size: 11px;
+  }
+
+  .box p {
+    font-family: var(--font-poppins);
+    font-size: 10px;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 0px 10px;
+  }
+
+  .boxi, .boxii {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box1 {
+    height: 281px;
+  }
+
+  .ga4{
+    width: 84%;
+  }
+  .box1 p {
+    font-size: 10px;
+  }
+
+  .ga5 img {
+    width: 102%;
+  }
+
+  .container {
+    padding-top: 0px;
+  }
+
+  .sec-d3{
+    padding: 0px 5px;
+  }
+
+  .sec-ddd2 h5{
+    font-size: 17px;
+    padding: 0px 9px;
+  }
+  
+  .sec-ddd2 p {
+    font-size: 14px;
+    padding: 0px 9px;
+  }
+
+  .contai{
+    flex-direction: column;
+  }
+
+  .foot{
+    padding: 0;
+    font-size: 12px;
+  }
+
+    .sec-h .joyy,
+    .sec-h .joy1,
+    .sec-h .joy2 {
+      font-size: 1.5rem;
+    }
+  
+    .sec-d {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sec-d .dr img {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    .btd {
+      padding: 0;
+      margin: 0;
+    }
+  
+    .box1 {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .box {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .ga3 {
+      width: 100%;
+    }
+  
+    body {
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    .sec-d {
+      padding: 1rem;
+    }
+  
+    .btd {
+      padding: 1rem 0;
+    }
+  
+    .btn {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+  }
+  
+ 
+  /* Styles pour les tablettes */
+  @media (min-width: 601px) and (max-width: 1113px) {
+    .bck {
+      padding: 30px;
+    }
+  
+    .sec-h .joy,
+    .sec-h .joyy,
+    .sec-h .joy1,
+    .sec-h .joy2 {
+      font-size: 2rem;
+    }
+
+    .sec-d .ga h1{
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    .ga{
+      width: 50%;
+    }
+
+    .dr{
+      width: 50%;
+    }
+
+    .sec-d {
+      align-items: center;
+    }
+  
+    .sec-d .dr img {
+      max-width: 100%;
+    }
+
+    .sec-d .ga p {
+
+      font-size: 14px;
+    }
+
+  
+    .box1 {
+      width: 45%;
+    }
+  }
+  
+  /* Autres modifications */
+  .sec-h .arrow {
+    display: none;
+  }
+  
+  .input-container,
+  .start-button {
+    font-size: 1rem;
+  }
+

@@ -44,10 +44,27 @@
         </div>
 
     </div>
-    <div class="sec-d1">
-        <div class="ga1">
-            <p>data-monitor</p>
-        </div>
+    <div class="marquee">
+    <div class="marquee-content">
+        <span>data-monitor</span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+    </div>
+    <div class="marquee-content">
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+        <span>data-monitor </span>
+    </div>
     </div>
 
     <div class="sec-d2">
@@ -169,18 +186,24 @@
 
     <div class="sec-ddd2">
         <h5>
-            prenez le contrôle absolu de la qualité de l'air que vous<br>
+            prenez le contrôle absolu de la qualité de l'air que vous
             et vos proches. respirez chaque jour avec databot
         </h5>
         <p>
             La qualité de l'air que vous respirez est trop importante pour être laissée au hasard. Avec Databoot,
-            <br>surveillez et agissez facilement pour garantir un air sain à votre famille.
+            surveillez et agissez facilement pour garantir un air sain à votre famille.
         </p>
         <div class="contai">
-            <input type="email" placeholder="Entrez votre email" class="email-input">
+            <div class="input-container">
+                <i class='bx bx-envelope'></i>
+                <input type="email" placeholder="Entrez votre email" class="email-input">
+            </div>
             <button class="start-button">Démarrer</button>
         </div>
     </div>
+    <?php
+        include("./Ressources/layouts/footer.php");
+    ?>
     <script src="./Ressources/js/header.js"></script>
     <script src="./Ressources/js/slider.js"></script>
 </body>
