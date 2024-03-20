@@ -1,6 +1,6 @@
 <header>
   <div class="logo">
-    <a href="../index.php"><img src="./Ressources/assets/databot.svg" alt="Logo"></a>
+    <a href="../index.php"><img src="../Ressources/assets/databot.svg" alt="Logo"></a>
   </div>
   <nav>
     <ul class="menu">

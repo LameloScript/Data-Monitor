@@ -11,6 +11,8 @@
   --color-green: #007679;
 }
 
+
+
 @font-face {
   font-family: "Joyride1";
   src: url("Joyride-Regular.otf") format("opentype");
@@ -73,12 +75,17 @@
   margin: 0 auto; /* Pour centrer la classe bck elle-même sur la page */
 }
 
-.sec-h .joy,
-.sec-h .joyy {
+.sec-h .joy {
   font-family: Joyride;
   font-size: 101px;
   color: black;
   /* padding-right: 154px; */
+}
+
+.sec-h .joyy{
+  font-family: Joyride;
+  font-size: 57px;
+  color: black;
 }
 
 .sec-h .joy1,
@@ -89,7 +96,7 @@
 }
 .sec-h {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   padding-top: 50px;
   /* width: 353px; */
 }
@@ -189,6 +196,7 @@ body {
   color: #000000;
   font-size: 27px;
   text-align: center;
+  padding: 0px 365px;
 }
 
 .contai {
@@ -216,7 +224,8 @@ body {
 .email-input{
   border: none;
   background-color: #EDEDED;
-
+  font-family: 'Poppins';
+  font-size: 14px;
 }
 
 .start-button {
@@ -231,14 +240,16 @@ body {
 }
 
 .start-button:hover {
-  background-color: #0056b3;
+  background-color: #fdfdfd;
+  color: var(--color-green);
+  border: 1.5px solid var(--color-green);
 }
 
 .sec-ddd2 p {
   font-family: var(--font-poppins);
   color: #a3a3a3;
   font-size: 18px;
-
+  padding: 0px 448px;
   text-align: center;
 }
 
@@ -247,18 +258,13 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  /* border-bottom: 2px solid #000; */
-  /* width: 1118px; */
-  /* justify-content: center; */
   padding-bottom: 28px;
-  /* margin: 0px -219px; */
-  /* border-bottom-width: 3px; */ /* Définit la largeur du bord inférieur à 2 pixels */
 }
 
 .sec-d3 {
-  padding: 44px 5px; /* Ajoutez un remplissage pour l'espace intérieur si nécessaire */
-  margin: 0; /* Assurez-vous qu'il n'y a pas de marge pour que la section soit alignée sur le bord de l'écran */
-  box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur spécifiée */
+  padding: 44px 5px; 
+  margin: 0; 
+  box-sizing: border-box; 
   display: flex;
   justify-content: center;
 }
@@ -348,8 +354,6 @@ body {
   height: 335px;
   overflow: hidden;
   position: relative;
-  /* background-color: black; */
-  /* padding-top: 33px; */
 }
 
 .slide {
@@ -377,7 +381,6 @@ body {
   align-items: center;
   font-size: 24px;
   border-radius: 20px;
-  /* padding-bottom: -50px; */
   box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 31%);
   padding: 2px 0px;
 }
@@ -432,10 +435,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  /* background-color: var(--color-dark-grey); */
   color: var(--color-white);
-  /* max-width: 129%; */
-  /* margin: 0 auto; */
 }
 
 .logo a {
@@ -528,110 +528,120 @@ header {
   margin-top: 20px;
 }
 
+/* ------------------------------------------------------------------------------------------- */
 
-  footer{
+
+
+.sc1{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 0 auto;
+  padding-top: 50px;
+  gap: 50px;
+  width: 1118px;
+}
+
+.sc2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 0 auto;
+  padding-top: 50px;
+  gap: 50px;
+  width: 1118px;
+  
+}
+
+.colo{
+  background-color: white;
+}
+
+
+.secc1 h4{
+  font-family: Joyride;
+  font-size: 22px;
+  color: var(--color-green);
+}
+
+.secc1 p{
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 38px;
+  font-family: var(--font-poppins);
+}
+
+
+
+
+
+
+.secc4 h4{
+  font-family: Joyride;
+  font-size: 22px;
+  color: var(--color-green);
+}
+
+.secc4 p{
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 38px;
+  font-family: var(--font-poppins);
+}
+
+
+
+.secc5 h4{
+  font-family: Joyride;
+  font-size: 22px;
+  color: var(--color-green);
+}
+
+.secc5 p{
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 38px;
+  font-family: var(--font-poppins);
+}
+
+
+
+.secc6 h4{
+  font-family: Joyride;
+  font-size: 22px;
+  color: var(--color-green);
+}
+
+.secc6 p{
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 38px;
+  font-family: var(--font-poppins);
+}
+
+
+.secc8 h4{
+  font-family: Joyride;
+  font-size: 22px;
+  color: var(--color-green);
+}
+
+.secc8 p{
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 68px;
+  font-family: var(--font-poppins);
+}
+
+
+footer{
     background-color: white;
     display: flex;
     justify-content: center;
-  }
-/* Styles pour le mode tablette et mobile */
-/* @media (max-width: 930px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background-color: var(--color-green);
-    padding: 17px;
-    font-family: var(--font-poppins);
-    font-weight: 300;
-    font-size: 18px;
-  }
-
-
-  .menu li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .menu a {
-    color: var(--color-white);
-    text-decoration: none;
-    font-family: var(--font-poppins);
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 10px;
-  }
-
-  .connexion {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-  }
-
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: var(--color-green);
-    transition: all 0.3s ease-in-out;
-  }
-
-  .menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .menu-toggle.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .menu.active {
-    display: flex; */
-  
-/* 
-  .sec-d {
-    display: flex;
-  }
-
-  .sec-h .joy,
-  .sec-h .joyy {
-    font-family: Joyride;
-    font-size: 38px;
-    color: black;
-  }
-
-  .sec-h .arrow {
-    display: none;
-  }
-
-  .sec-h .joy1,
-  .sec-h .joy2 {
-    font-family: Joyride;
-    font-size: 38px;
-    color: black;
-  }
-  .sec-h {
-    display: flex;
-    justify-content: center;
-    padding-top: 56px;
-  }
-
-  .sec-d h1 {
-    font-family: Joyride;
-    font-size: 38px;
-    color: black;
-  } */
-
+}
 
   @media (max-width: 930px) {
     .menu {
@@ -695,6 +705,8 @@ header {
     .menu.active {
       display: flex;
     }
+
+  
   }
   
   /* Styles pour les smartphones */
@@ -710,6 +722,10 @@ header {
 
     .sec-h .joy {
       font-size: 25px;
+    }
+
+    .sec-h .joyy{
+      font-size: 20px;
     }
 
     .sec-d .ga h1 {
@@ -875,6 +891,7 @@ header {
     .bck {
       padding: 30px;
     }
+
   
     .sec-h .joy,
     .sec-h .joyy,
