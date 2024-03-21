@@ -4,9 +4,9 @@
   </div>
   <nav>
     <ul class="menu">
-      <li><a href="./views/installation.php">Service d'installation</a></li>
-      <li><a href="#">Formations</a></li>
-      <li><a href="#">Qui sommes-nous ?</a></li>
+      <li><a href="./installation.php">Service d'installation</a></li>
+      <li><a href="./formations.php">Formations</a></li>
+      <li><a href="./qui-nous-sommes.php">Qui sommes-nous ?</a></li>
       <li><a href="#">Nous contacter</a></li>
     </ul>
   </nav>
