@@ -163,6 +163,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .marquee-content {
@@ -225,7 +226,7 @@ body {
   border: none;
   background-color: #EDEDED;
   font-family: 'Poppins';
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .start-button {
@@ -537,7 +538,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin: 0 auto;
   padding-top: 50px;
-  gap: 50px;
+  /* gap: 50px; */
   width: 1118px;
 }
 
@@ -569,11 +570,6 @@ header {
   margin-bottom: 38px;
   font-family: var(--font-poppins);
 }
-
-
-
-
-
 
 .secc4 h4{
   font-family: Joyride;
@@ -712,7 +708,84 @@ footer{
   /* Styles pour les smartphones */
   @media (max-width: 600px) {
     .bck {
-      padding: 20px;
+      /* padding: 20px; */
+    }
+
+    .sc1, .sc2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sc2 {
+      width: 100%;
+    }
+    .secc1 {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .secc1 h4{
+    font-size: 14px;
+    }
+    
+    .secc1 p{
+      font-size: 12px;
+      padding: 0px 16px;
+    }
+    
+    .secc4 h4{
+      font-size: 14px;
+    }
+    
+    .secc4 p{
+      font-size: 12px;
+      padding: 0px 16px;
+    }
+    
+    
+    
+    .secc5 h4{
+      font-size: 14px;
+    }
+    
+    .secc5 p{
+      font-size: 12px;
+      padding: 0px 16px;
+    }
+    
+    
+    
+    .secc6 h4{
+      font-family: Joyride;
+      font-size: 22px;
+      color: var(--color-green);
+    }
+    
+    .grid1{
+      width: 100%;
+    }
+    
+    .secc6 p{
+      color: black;
+      font-size: 18px;
+      text-align: justify;
+      margin-bottom: 38px;
+      font-family: var(--font-poppins);
+    }
+    
+  
+    .secc8 h4{
+      font-size: 14px;
+    }
+    .marquee{
+      /* width: 92%; */
+    }
+    .secc8 p{
+      font-size: 12px;
+      padding: 0px 16px;
+      /* width: 100%; */
     }
 
     .sec-h{
@@ -725,26 +798,27 @@ footer{
     }
 
     .sec-h .joyy{
-      font-size: 20px;
+      font-size: 16px;
     }
 
     .sec-d .ga h1 {
       font-family: Joyride;
-      font-size: 20px;
+      font-size: 16px;
       color: #000000;
       line-height: 24px;
     }
 
     .sec-d .ga p {
       font-family: var(--font-poppins);
-      font-size: 14px;
+      font-size: 12px;
       color: #595959a3;
       line-height: 19px;
       font-weight: 300;
+      text-align: justify;
   }
 
   .marquee-content {
-    font-size: 14px;
+    font-size: 11px;
     font-family: Joyride;
   }
 
@@ -760,7 +834,8 @@ footer{
   
   .ga3 h2 {
     font-family: Joyride;
-    font-size: 17px;
+    font-size: 16px;
+    /* text-align: justify; */
   }
 
   .box h4 {
@@ -804,13 +879,15 @@ footer{
   }
 
   .sec-ddd2 h5{
-    font-size: 17px;
+    font-size: 16px;
     padding: 0px 9px;
   }
   
   .sec-ddd2 p {
-    font-size: 14px;
-    padding: 0px 9px;
+    font-size: 12px;
+    padding: 0px 14px;
+    text-align: justify;
+    font-weight: 300;
   }
 
   .contai{
@@ -819,13 +896,13 @@ footer{
 
   .foot{
     padding: 0;
-    font-size: 12px;
+    font-size: 7px;
   }
 
     .sec-h .joyy,
     .sec-h .joy1,
     .sec-h .joy2 {
-      font-size: 1.5rem;
+      /* font-size: 12px; */
     }
   
     .sec-d {
@@ -860,6 +937,7 @@ footer{
     body {
       font-size: 16px;
       text-align: center;
+      width: 100%;
     }
   
     h1 {
@@ -937,8 +1015,13 @@ footer{
     display: none;
   }
   
-  .input-container,
+  .input-container {
+    font-size: 12px;
+    padding: 11px 63px;
+  }
+
   .start-button {
-    font-size: 1rem;
+    font-size: 12px;
+    padding: 11px 106px;
   }
 

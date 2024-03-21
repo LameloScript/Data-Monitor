@@ -21,10 +21,8 @@
         <div class="sec-h">
             <!-- <img class="arrow"  src="./Ressources/assets/arrow.svg" alt="arrow"></a>  -->
             <span class="joyy">servicE d'installatiOn</span>
-        </div> 
-    </div>
-    <div class="grid1">
-            <section class="sc1">
+        </div>
+        <section class="sc1">
                 <div class="secc1">
                     <h4>
                         Etape 1 : installation d'equipements sur site
@@ -43,7 +41,10 @@
                 <div class="secc2">
                     <img src="" alt="installation-sur-site">
                 </div>
-            </section>
+            </section> 
+    </div>
+    <div class="grid1">
+            
             <div class="marquee">
                 <div class="marquee-content">
                     <span>data-monitor</span>
