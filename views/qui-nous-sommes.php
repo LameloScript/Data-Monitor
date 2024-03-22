@@ -16,7 +16,7 @@
 
     <div class="bckk">
         <?php
-        include("../Ressources/layouts/header2.php");
+        include("../Ressources/layouts/header3.php");
         ?>
         <div class="sec-h">
             <!-- <img class="arrow"  src="./Ressources/assets/arrow.svg" alt="arrow"></a>  -->
@@ -60,7 +60,7 @@
                 Nous croyons en la responsabilité envers l'environnement. Tous nos produits
                 sont conçus pour minimiser leur empreinte carbone et leur impact sur la planète.
                 Nous encourageons également nos clients à utiliser nos solutions
-                pour réduire leur propre empreinte écologique.
+                pour réduire leur propreempreinte écologique.
             </p>
         </div>
         <div class="trio3">
@@ -88,12 +88,54 @@
                 notre dévouement à fournir un service exceptionnel à nos clients.
             </p>
         </div>
+        <div class="te2">
+            <div class="teams">
+                <img src="../Ressources/assets/daniel-boua-1.png" alt="image-daniel-boua">
+                <span>daniel boua</span>
+                <p>
+                    Developper Fullstack 
+                    Mobile + IOT
+                </p>
+            </div>
+            <div class="teams">
+                <img src="../Ressources/assets/edgar-1.png" alt="image-edgar-kouassi">
+                <span>edgar kouassi</span>
+                <p>
+                    Developper Fullstack 
+                    Mobile + IOT
+                </p>
+            </div>
+            <div class="teams">
+                <img src="../Ressources/assets/landry.png" alt="image-landry-gnakalé">
+                <span>landry gnakalé</span>
+                <p>
+                    Developper Fullstack 
+                    Mobile + IOT
+                </p>
+            </div>
+            <div class="teams">
+                <img src="../Ressources/assets/paul1.png" alt="image-paul">
+                <span>tiené paul yoma</span>
+                <p>
+                    Developper Fullstack 
+                    Mobile + IOT
+                </p>
+            </div>
+            <div class="teams">
+                <img src="../Ressources/assets/val.png" alt="image-val">
+                <span>sanle valent</span>
+                <p>
+                    Developper Fullstack 
+                    Mobile + IOT
+                </p>
+            </div>
+        </div>
     </section>
     <?php
     include("../Ressources/layouts/footer.php");
     ?>
     </div>
-    <script src="../Ressources/js/header.js"></script>
+    <script src="../Ressources/js/header2.js"></script>
 </body>
 
 </html>

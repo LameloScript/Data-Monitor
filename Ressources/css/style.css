@@ -71,6 +71,7 @@
   background-repeat: no-repeat;
   max-width: 1118px;
   margin: 0 auto; /* Pour centrer la classe bck elle-même sur la page */
+  /* height: 100vh; */
 }
 
 .bckk {
@@ -79,7 +80,7 @@
   background-position: center;
   background-color: var(--color-green);
   background-repeat: no-repeat;
-  min-width: 1118px;
+  max-width: 1118px;
   margin: 0 auto; /* Pour centrer la classe bck elle-même sur la page */
 }
 
@@ -113,14 +114,7 @@
   font-size: 26px;
 }
 
-.tec2{
-
-width: 75%;
-
-display: flex;
-
-justify-content: flex-end;
-}
+.tec2{width: 75%;display: flex;justify-content: flex-end;}
 
 .tec2 img{
   width: 90%;
@@ -163,7 +157,8 @@ justify-content: flex-end;
 .team{
   background-color: var(--color-white);
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .te1{
@@ -180,6 +175,8 @@ justify-content: flex-end;
 
 .te1 p{
   font-family: var(--font-poppins);
+  font-size: 16px;
+  text-align: center;
 }
 
 .trio2{
@@ -189,6 +186,92 @@ justify-content: flex-end;
   flex-direction: column;
   padding: 60px;
 }
+
+.teams{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.te2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  align-items: center;
+  padding-bottom: 75px;
+}
+
+.te2 img{
+  width: 80%;
+}
+
+.te2 span{
+  font-family: Joyride;
+  font-size: 14px;
+  color: var(--color-green);
+  padding-top: 20px;
+}
+
+.te2 p{
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.ns { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 50px 0px;
+}
+
+.blc{
+  background-color: var(--color-green);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.blc img {
+  width: 80%;
+}
+
+.blc p{
+  color: white;
+  font-size: 22px;
+  line-height: 38px;
+}
+
+    #nom, #email, #txtar {
+    border: 1px solid var(--color-green);
+    padding: 15px 271px 15px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #ffffff;
+  }
+
+  #txtar {
+    border: 1px solid var(--color-green);
+    padding: 15px 254px 15px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #ffffff;
+  }
+
+  .form button{
+    background-color: var(--color-green);
+    padding: 15px 187px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font-poppins);
+  }
 
 .sec-h .joyy {
   font-family: Joyride;
@@ -260,6 +343,7 @@ body {
   background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
+  /* height: 100vh; */
 }
 
 .sec-h .arrow {
@@ -580,6 +664,25 @@ header {
   text-decoration: none;
 }
 
+.menus {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-poppins);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.menus li {
+  margin-right: 20px;
+}
+
+.menus a {
+  color: white;
+  text-decoration: none;
+}
+
 .connexion a {
   color: var(--color-grey);
   text-decoration: none;
@@ -892,7 +995,7 @@ header {
   font-family: var(--font-poppins);
   font-size: 18px;
   color: white;
-  line-height: 60px;
+  line-height: 42px;
 }
 
 .dwss ul li i {
@@ -962,6 +1065,15 @@ footer {
     transition: all 0.3s ease-in-out;
   }
 
+  .bars {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
   .menu-toggle.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -984,6 +1096,19 @@ footer {
   .bck {
     /* padding: 20px; */
   }
+
+  .bars {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menus {
+    display: none;
+}
 
   .sc1,
   .sc2 {
@@ -1104,12 +1229,12 @@ footer {
   }
 
   .dws{
-    padding: 0px 60px;
-    width: 40%;
+    /* padding: 0px 204px; */
+    /* width: 40%; */
   }
   .dwss{
-    padding: 0px 60px;
-    width: 40%;
+    padding: 20px 60px;
+    /* width: 40%; */
   }
 
   .dws h5{
@@ -1121,11 +1246,13 @@ footer {
   }
 
   .dws ul li{
-    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    font-size: 14px;
   }
 
   .dws input {
-    padding: 0px 10px;
+    padding: 11px 32px;
   }
 
   .dwss h5{
@@ -1137,11 +1264,13 @@ footer {
   }
 
   .dwss ul li{
-    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    font-size: 14px;
   }
 
   .dwss input {
-    padding: 0px 10px;
+    padding: 11px 26px;
   }
 
   .dw2 {
@@ -1151,6 +1280,46 @@ footer {
     flex-direction: column;
 }
 
+
+  .ns {
+    grid-template-columns: 1fr;
+  }
+
+  .blc img{
+      width: 47%;
+  }
+
+  .blc p{
+    font-size: 14px;
+  }
+
+  #nom, #email {
+    padding: 10px 121px 10px 10px;
+  }
+
+  #txtar{
+    padding: 10px 114px 10px 10px;
+  }
+
+  .form button{
+    padding: 13px 123px;
+    font-size: 14px;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blc{
+    padding: 14px 14px;
+    margin: 0 11px;
+  }
+
+  .blc p{
+    line-height: 28px;
+  }
+      
   .marquee {
     /* width: 92%; */
   }
@@ -1168,15 +1337,74 @@ footer {
     font-size: 25px;
   }
 
-  .sec-h .joyy {
-    font-size: 16px;
+  .sec-h .joyy, .sec-h .joyyy {
+    font-size: 25px;
   }
 
+  .secti1{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tec1{
+    /* width: 41%; */
+  }
+
+  .tec1 p{
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .tec2{
+    justify-content: center;
+  }
+  .tec2 img{
+    /* width: 30%; */
+  }
+
+  .trio{
+    grid-template-columns: 1fr;
+  }
+
+  .trio1 img, .trio2 img, .trio3 img {
+    width: 100px;
+  }
+
+  
+.trio1 p, .trio2 p, .trio3 p {
+  font-size: 14px;
+}
+
+.te2{
+  grid-template-columns: 1fr 1fr;
+}
+
+.trio1 h5, .trio2 h5, .trio3 h5 {
+  font-size: 20px;
+}
+
+.trio1, .trio3{
+  padding: 20px 22px;
+}
+  .trio2 {
+  padding: 20px 22px;
+  }
+
+.te1 h4{
+  font-size: 20px;
+}
+
+.te1 p{
+  font-size: 14px;
+}
   .sec-d .ga h1 {
     font-family: Joyride;
     font-size: 16px;
     color: #000000;
     line-height: 24px;
+  }
+  .te2 p{
+    font-size: 12px;
   }
 
   .sec-d .ga p {

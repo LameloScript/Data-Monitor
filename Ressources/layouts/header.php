@@ -7,7 +7,7 @@
       <li><a href="./views/installation.php">Service d'installation</a></li>
       <li><a href="./views/formations.php">Formations</a></li>
       <li><a href="./views/qui-nous-sommes.php">Qui sommes-nous ?</a></li>
-      <li><a href="#">Nous contacter</a></li>
+      <li><a href="./views/nous-contacter.php">Nous contacter</a></li>
     </ul>
   </nav>
   <div class="connexion">
